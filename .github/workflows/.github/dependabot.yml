@@ -1,0 +1,6 @@
+version: 2
+updates:
+  - package-ecosystem: "npm" # For JavaScript or Node.js projects
+    directory: "/"
+    schedule:
+      interval: "weekly"
