@@ -6,31 +6,53 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    
     steps:
-      - name: Checkout Repository
+      # Checkout the code
+      - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up Node.js (if you're using Node.js)
-        uses: actions/setup-node@v2
+      # Set up SonarQube for Static Code Analysis (SAST)
+      - name: Set up SonarQube
+        uses: sonarsource/sonarcloud-github-action@v1
         with:
-          node-version: '14'
-
-      - name: Install Dependencies
-        run: npm install
-
-      - name: Run Tests
-        run: npm test
-
-      - name: Build Application
-        run: npm run build
-
-      - name: Deploy to Production (Optional)
+          sonar-token: ${{ secrets.SONAR_TOKEN }}
+      
+      - name: Run SonarQube scan
         run: |
-          # Add your deployment script here (e.g., to AWS, Heroku)
-          echo "Deploying to production..."
+          sonar-scanner \
+            -Dsonar.projectKey=your_project_key \
+            -Dsonar.host.url=https://sonarcloud.io
+
+      # Build Docker Image (if applicable)
+      - name: Build Docker image
+        run: docker build -t devsecops-framework .
+
+      # Run OWASP ZAP for Dynamic Security Testing (DAST)
+      - name: Run OWASP ZAP Security Test
+        run: |
+          docker run --rm -u zap -v -p 8080:8080 owasp/zap2docker-stable zap-full-scan.py -t http://localhost:8080
+
+      # Scan Docker image with Trivy
+      - name: Scan Docker image with Trivy
+        run: |
+          docker run --rm -v /var/run/docker.sock:/var/run/docker.sock aquasec/trivy devsecops-framework
+
+      # Run TruffleHog to scan for secrets
+      - name: Run TruffleHog Secrets Scan
+        run: |
+          docker run --rm -v $(pwd):/repo trufflesecurity/trufflehog --entropy=True --json /repo
+
+      # OPA Compliance Checks (if applicable)
+      - name: Run OPA Policy Compliance Check
+        run: |
+          opa test /path/to/your/policy
+
 
