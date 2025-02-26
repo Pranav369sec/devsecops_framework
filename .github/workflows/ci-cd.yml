@@ -2,6 +2,10 @@
 
 name: CI/CD Pipeline
 
+# This is a basic workflow to help you get started with Actions
+
+name: CI/CD Pipeline
+
 on:
   push:
     branches:
@@ -13,7 +17,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
       # Checkout the code
       - name: Checkout code
@@ -40,18 +44,55 @@ jobs:
         run: |
           docker run --rm -u zap -v -p 8080:8080 owasp/zap2docker-stable zap-full-scan.py -t http://localhost:8080
 
-      # Scan Docker image with Trivy
+      # Scan Docker image with Trivy (Container Security)
       - name: Scan Docker image with Trivy
         run: |
           docker run --rm -v /var/run/docker.sock:/var/run/docker.sock aquasec/trivy devsecops-framework
 
-      # Run TruffleHog to scan for secrets
+      # Run TruffleHog to scan for secrets (Secret Scanning)
       - name: Run TruffleHog Secrets Scan
         run: |
           docker run --rm -v $(pwd):/repo trufflesecurity/trufflehog --entropy=True --json /repo
 
-      # OPA Compliance Checks (if applicable)
+      # OPA Compliance Checks (Policy Compliance)
       - name: Run OPA Policy Compliance Check
+        run: |
+          opa test /path/to/your/policy
+
+      # Run Snyk for Dependency Vulnerability Scanning
+      - name: Run Snyk test
+        uses: snyk/actions/node@master
+        with:
+          command: test
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+
+      # Run Checkov for Infrastructure as Code (IaC) Security
+      - name: Run Checkov for IaC Security
+        uses: bridgecrewio/checkov-action@v1
+        with:
+          checkov_version: latest
+
+      # Run Git Secrets for additional secret scanning
+      - name: Run Git Secrets Scan
+        run: |
+          git secrets --scan
+
+      # Run CodeQL for advanced static analysis
+      - name: Run CodeQL analysis
+        uses: github/codeql-action/analyze@v2
+
+      # Run Bandit for Python Security Linter (if using Python)
+      - name: Run Bandit Security Linter
+        run: bandit -r .
+
+      # Run Clair to scan for Docker vulnerabilities (optional)
+      - name: Run Clair to scan Docker image for vulnerabilities
+        run: |
+          docker pull quay.io/coreos/clair:latest
+          docker run --rm -e CLAIR_PORT=5432 quay.io/coreos/clair:latest -c http://clair:6060
+
+
         run: |
           opa test /path/to/your/policy
 
