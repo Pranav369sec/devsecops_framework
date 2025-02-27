@@ -4,6 +4,14 @@
 
 
 
+
 ## Maturity Model
 
-You can view the [Maturity Model](https://github.com/Pranav369sec/devsecops_framework/blob/main/maturitymodel.md) here.
+### Maturity Model Description
+
+Here is the content of the maturity model directly shown:
+
+*(copy-paste the contents from `maturitymodel.md` here)*
+
+Alternatively, you can view the [Maturity Model](https://github.com/Pranav369sec/devsecops_framework/blob/main/maturitymodel.md) as a separate file.
+
