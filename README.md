@@ -12,10 +12,4 @@
 
 ## DevSecOps Playbook
 
-### Overview
-
-Here’s the content of the DevSecOps Playbook:
-
-*(copy-paste the content from `DevSecOpsPlaybook` here)*
-
-Alternatively, you can view the **[DevSecOps Playbook](https://github.com/Pranav369sec/devsecops_framework/blob/main/DevSecOpsPlaybook)** as a separate file.
+You can view the **[DevSecOps Playbook](https://github.com/Pranav369sec/devsecops_framework/blob/main/DevSecOpsPlaybook)** here.
