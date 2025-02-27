@@ -4,7 +4,7 @@
 
 # DevSecOps_Cycle
 
-![DevSecOps Cycle](https://github.com/Pranav369sec/devsecops_framework/blob/main/devsecops%20cycle.jpg)
+![DevSecOps Cycle](https://github.com/Pranav369sec/devsecops_framework/blob/main/Devsecopscycle.jpg)
 
 # DevSecop
 [DevSecop](https://github.com/Pranav369sec/devsecops_framework/blob/main/DevSecOps)
