@@ -1,7 +1,7 @@
 # devsecops_framework
 devsecops framework
+![DevSecOps Image](https://github.com/Pranav369sec/devsecops_framework/raw/main/devsecops-image-2000-6557ba1b00.webp)
 
-![DevSecOps Image](assets/devsecops-image-2000-6557ba1b00.webp)
 
 
 ## Maturity Model
