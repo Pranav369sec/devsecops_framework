@@ -2,6 +2,10 @@
 
 ![DevSecOps Image](https://github.com/Pranav369sec/devsecops_framework/raw/main/devsecops-image-2000-6557ba1b00.webp)
 
+# DevSecOps_Cycle
+
+![DevSecOps Cycle](https://github.com/Pranav369sec/devsecops_framework/blob/main/devsecops%20cycle.jpg)
+
 # DevSecop
 [DevSecop](https://github.com/Pranav369sec/devsecops_framework/blob/main/DevSecOps)
 
