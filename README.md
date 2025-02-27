@@ -13,3 +13,7 @@
 ## DevSecOps Playbook
 
 You can view the **[DevSecOps Playbook](https://github.com/Pranav369sec/devsecops_framework/blob/main/DevSecOpsPlaybook)** here.
+
+## DevSecOps Checklist
+
+You can view the **[DevSecOps Checklist](https://github.com/Pranav369sec/devsecops_framework/blob/main/DevSecOps%20Checklist)** here.
