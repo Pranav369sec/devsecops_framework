@@ -17,3 +17,7 @@
 ## DevSecOps Checklist
 
 [DevSecOps Checklist](https://github.com/Pranav369sec/devsecops_framework/blob/main/DevSecOps%20Checklist)
+
+# DevSecOps_Cycle
+
+![DevSecOps Cycle](https://github.com/Pranav369sec/devsecops_framework/blob/main/devsecops%20cycle.jpg)
