@@ -1,0 +1,118 @@
+What is DevSecOps?
+DevSecOps stands for Development, Security, and Operations. It is a software development approach that emphasises on integration of security and operations in the software development process. It involves the collaboration of the developing team, testing team, security professionals, and operations team. The goal of DevSecOps is to build and maintain secure software by creating and adapting a continuous environment of security into the software development process.
+
+DevSecOps helps organizations quickly identify and solve potential security vulnerabilities for the development team that relies on an agile and rapid software development lifecycle model. It accelerates modern software prototyping and agile framework development while addressing security issues during the development phase only, being an effective methodology that increases software quality and ensures fast delivery.
+
+Where is DevSecOps Used?
+In present times, DevSec Ops is widely integrated into the software building and development cycle that leads to early product release. It is also used in altering security practices throughout the development of IT operations. DevSecOps makes sure that security does not slow down the software process instead it saves the developers and testers from the overtime of debugging security issues in software that is hard to debug and solve in later stages of maintenance.
+
+It boosts the delivery system of applications in organizations and increases the efficiency of applications. It is mostly seen as a methodology change applied while building the software application. It is also used in integrating security into the already planned and prototyped software development lifecycle.
+
+What are the Principles of DevSecOps?
+DevSecOps is a collaborative integration of development, security, and operations in a software development environment following certain principles for efficient and effective deployment.
+
+Security Testing: DevSecOps automates security testing in collaboration with unit testing or integration testing to analyze and debug quality for security vulnerabilities and threats. Such a principle improves the quality of software products after every build and prototype release integrating into the CI/CD pipeline.
+Promoting Culture and Communication: Organisations hiring DevSecOps professionals make it easy for the developer’s team and testers’ team to communicate and work together parallel practicing security practices and building qualitative software hand-in-hand.
+Shift Left Security: Every software product is configured using the shift left strategy in the SDLC model, optimizing cost, security and market for business goals. It enables the team to early identify security and risk exposure promoting a secure build.
+Continuous Quality Improvement: Security threats and risks are continuously evolving in present times, exposing the quality of software products to vulnerabilities and delaying the end delivery of products. The principle of continuous quality improvement helps the development team build a robust prototype during the SDLC phases.
+Some of the Major Principles of DevOps are:
+Reliable Software Delivery
+Automated Testing compliance
+Quality improvement
+Rapid Delivery
+What is the Difference Between DevOps and DevSecOps?
+DevSecOps is not only an integration of security in DevOps. Let us understand more about their key differences:
+
+Factors
+
+DevOps
+
+DevSecOps
+
+Methodology
+
+DevOps refers to the cultural methodology that promotes the Development and Operations Team working in collaboration to deploy and code the software products continuously to integrate development tools or maintaining operations simultaneously to build a high-end product at the end.
+
+Refers to software development approach that emphasises on integration of security and operations in the software development process. It involves the collaboration of the developing team, testing team, security professionals and operations team
+
+Integration
+
+It is a continuous integration of operations and deployment.
+
+It is an infinite integration of Security over Code, Test, Build and Deploy.
+
+Features
+
+Improves speed and efficiency from building phase to deployment phase.
+
+This is an extension of DevOps model with an integrated security features.
+
+Tools Required
+
+DevOps requires CI/CD monitoring, software automated testing and configuration management.
+
+In addition to DevOps tools, DevSecOps requires tools like Zap, Trivy, Vault or Dynamic Security Application Testing.
+
+Understand detailed differences between DevOps and DevSecOps.
+
+What are the Benefits of DevSecOps?
+There are several benefits of incorporating the DevSecOps model in software applications:
+
+Uniform Security: DevSecOps involves automated security verification checks on the code to identify potential errors and threats to create no hassle with deployment schedules.
+Automated auto-verification: DevSecOps is an automated task following the installation of security tools that identify vulnerabilities without any manual and direct contact with the operations team or maintainable team. It is a vital ongoing background check on the software development process.
+No code redundancy and repetition: DevSecOps provides best practices and tools for code refinement, suggesting good code standards and code syntax to provide a qualitative end product.
+Advanced Threat Analysis: The DevSecOps continuous monitoring eliminates advanced threats and bugs solving the flow of debugging for developers.
+Software Cost Saving Potential: The organisations benefit from the integration of DevSecOps professionals with the development team saving the software cost and attaining the major business goal.
+How DevSecOps Works?
+DevSecOps is the secure integration of code through CI/CD tools. It follows a flowchart of pipeline timeline, covering software security checks throughout :
+
+1. Code
+The entire workflow starts from the root code to ensure static code analysis and code reviews are implemented in the coding phase for the syntax prone to security threats.
+
+2. Commit
+The commit made to the git repository needs to be passed through the right level of security by working in a private repository instead of the public repository to prevent any threat exposure. The CI pipeline starts after the Commit phase.
+
+3. Build and Test
+This is a combined phase of static code analysis identifying vulnerabilities, performing integration tests and performance tests along with infrastructure scans. This pipeline interval is called as CI pipeline.
+
+4. Staging and Production
+This phase of the pipeline is called a CD part of the pipeline and includes a review in staging and production with a parallel passive penetration test, and SSL scan to ensure the production-ready code is well protected.
+
+What are the Challenges in Implementing DevSecOps?
+There are several challenges faced by the DevSecOps team while collaborating with the development team:
+
+Compatibility Issues: While DevSecOps methodology contains a certain set of tools and equipment to protect data and code from security vulnerabilities or threats, it raises security issues as well if not compatible with the ongoing software SDLC. The issue may emerge across the development team to make their code compatible with security concerns.
+Complexity Issue: Heavy deployment, continuous infrastructure security check, data security, and code reassurance heavily leverage the development team and increases the level of complexity while building and delivering software product.
+Speed and Security Issue: DevSecOps is all about high and fast delivery with security and operations integration but sometimes too many security concerns hamper the positive impact of development and deployment.
+Skills Issue: Developers still lack the security skills that need to be carried out while implementing DevSecOps tools and practices. The developer must enrol in some self-paced course or online training by organisations to implement security practices while coding efficiently.
+What are the Best Practices for DevSecOps?
+Today, every developer must follow the rapid pace of software delivery, there are certain best practices one must follow to avoid pitfalls of security:
+
+Mapping: We should map every building block of the DevOps pipeline with security and integration, where developers while writing code will focus on secret management.
+Conduct Code Quality: In the build phase, the developer must conduct code quality SAST ( Static Application Security Testing) to ensure security pitfalls to avoid.
+Dynamic Testing Implementation: In the testing phase DAST tools should be used to run quality measures on code.
+Manage Configuration Environment: In the last deployment phase, one should robust the operational environment with SSL Scans and Infrastructure Scans to make business goal-oriented integration.
+What Are Some Commonly Used DevSecOps Tools?
+Tools are the efficient utility of the DevSecOps model that helps to fast-pace the software development environment. They are integrated into the DevOps pipeline. There are several tools used to ensure the safety of data and the implementation of security in software processes.
+
+Tools are categorised into several genres like Code Analysis, Change Management, Compliance Monitoring, Threat Investigation and Vulnerability Management while integrating them separately through different phases of SDLC. There are certain categories in which tools are been segregated to ensure secure application development:
+
+1. Code Analysis
+This category of DevSecOps demonstrates empowerment of security in the coding phase of development. Tools like SAST (Static Application Security Testing) and DAST ( Dynamic Application Security Testing ) ensure security and keep check of threat analysis in a given developer’s source code with a predefined set of rules and patterns.
+
+2. Change Management
+This category represents any change or modification that happened during the application development. It helps in the continuous improvement of code and fixes potential vulnerabilities and changes.
+
+Example: 
+
+Jenkins, Travis CI automates changes and integration to the development process.
+
+3. Compliance Monitoring
+There are certain tools which focus on compliance features such that the software composition analysis (SCA) automatically monitors future risk management and security compliance.
+
+Example: 
+
+Nagios, Zabbix, and Splunk monitor the performance of the code.
+
+4. Threat Investigation and Vulnerability Management
+DevSecOps professionals use tools like Interactive Secure Application Testing ( ISAT) to evaluate threats in the runtime environment of software development.
