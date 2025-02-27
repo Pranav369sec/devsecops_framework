@@ -6,14 +6,14 @@
 
 
 ## Maturity Model
- [Maturity Model](https://github.com/Pranav369sec/devsecops_framework/blob/main/maturitymodel.md) as a separate file.
+ [Maturity Model](https://github.com/Pranav369sec/devsecops_framework/blob/main/maturitymodel.md)
 
 
 
 ## DevSecOps Playbook
 
-You can view the **[DevSecOps Playbook](https://github.com/Pranav369sec/devsecops_framework/blob/main/DevSecOpsPlaybook)** here.
+[DevSecOps Playbook](https://github.com/Pranav369sec/devsecops_framework/blob/main/DevSecOpsPlaybook)
 
 ## DevSecOps Checklist
 
-You can view the **[DevSecOps Checklist](https://github.com/Pranav369sec/devsecops_framework/blob/main/DevSecOps%20Checklist)** here.
+[DevSecOps Checklist](https://github.com/Pranav369sec/devsecops_framework/blob/main/DevSecOps%20Checklist)
