@@ -20,40 +20,6 @@ Reliable Software Delivery
 Automated Testing compliance
 Quality improvement
 Rapid Delivery
-What is the Difference Between DevOps and DevSecOps?
-DevSecOps is not only an integration of security in DevOps. Let us understand more about their key differences:
-
-Factors
-
-DevOps
-
-DevSecOps
-
-Methodology
-
-DevOps refers to the cultural methodology that promotes the Development and Operations Team working in collaboration to deploy and code the software products continuously to integrate development tools or maintaining operations simultaneously to build a high-end product at the end.
-
-Refers to software development approach that emphasises on integration of security and operations in the software development process. It involves the collaboration of the developing team, testing team, security professionals and operations team
-
-Integration
-
-It is a continuous integration of operations and deployment.
-
-It is an infinite integration of Security over Code, Test, Build and Deploy.
-
-Features
-
-Improves speed and efficiency from building phase to deployment phase.
-
-This is an extension of DevOps model with an integrated security features.
-
-Tools Required
-
-DevOps requires CI/CD monitoring, software automated testing and configuration management.
-
-In addition to DevOps tools, DevSecOps requires tools like Zap, Trivy, Vault or Dynamic Security Application Testing.
-
-Understand detailed differences between DevOps and DevSecOps.
 
 What are the Benefits of DevSecOps?
 There are several benefits of incorporating the DevSecOps model in software applications:
